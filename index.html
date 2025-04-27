@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>InfraMonde Underground Portal!!!</title>
+  <!-- STYLE VINTAGE 1999 + touches Geocities -->
+  <style>
+    body{
+      background:#ffffcc url('images/old_paper_tile.gif');
+      color:#000033;
+      font-family:"Courier New",monospace;
+      margin:0;
+      font-size:15px;
+    }
+    #wrapper{width:760px;margin:0 auto;padding:20px;border:8px ridge #663300;background:#fffff4;box-shadow:0 0 12px rgba(0,0,0,.7);}    
+    h1{font-size:38px;text-align:center;color:#660000;text-shadow:1px 1px 0 #ffcc00;letter-spacing:2px;}
+    nav{text-align:center;margin:12px 0;}
+    nav a{font-weight:bold;text-decoration:none;color:#003366;margin:0 8px;}
+    article{margin-bottom:60px;border-bottom:3px dotted #666;padding-bottom:25px;}
+    time{display:block;font-size:12px;color:#555;}
+    img.snapshot{display:block;margin:10px auto;width:100%;max-width:640px;border:5px groove #000;filter:grayscale(30%) contrast(115%);}   
+    footer{text-align:center;font-size:11px;color:#333;margin-top:40px;}
+    .blink{animation:blinker 1s linear infinite;}
+    @keyframes blinker{50%{opacity:0;}}
+    hr.rainbow{height:6px;border:none;background:linear-gradient(90deg,red,orange,yellow,lime,cyan,blue,violet);}  
+    textarea{width:95%;height:120px;background:#ffffe0;border:2px inset #999;font-family:"Courier New",monospace;font-size:14px;}
+    .input{width:200px;border:2px inset #999;background:#ffffe0;font-family:"Courier New",monospace;font-size:14px;}
+  </style>
+  <!-- Fallback placeholder pour images manquantes -->
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('img.snapshot').forEach(img=>{
+        img.addEventListener('error',()=>{img.src='images/placeholder.gif';},{once:true});
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- MUSIQUE MIDI en HTML5 -->
+  <audio src="media/drone_loop.mid" autoplay loop hidden></audio>
+  <marquee scrollamount="6"><b>🔥 Bienvenue explorateurs — le campus n'est qu'une façade… descendez ! 🔥</b></marquee>
+
+  <div id="wrapper">
+    <h1>InfraMonde Underground Portal!!! <span class="blink">_</span></h1>
+    <p align="center"><img src="images/construction.gif" alt="[Under Construction]"></p>
+
+    <nav>
+      <a href="#welcome">Accueil</a> | 
+      <a href="#archives">Archives</a> | 
+      <a href="#map">Plan</a> | 
+      <a href="#secrets">Secrets</a> | 
+      <a href="#guestbook">Livre d'or</a>
+    </nav>
+
+    <!-- ========================== BILLET 1 ========================== -->
+    <article id="welcome">
+      <h2>Further Down into the Tunnels</h2>
+      <time datetime="1998-10-24">24 octobre 1998</time>
+      <p><em>Première incursion.</em> Couloir principal, vapeur brûlante, lichen métallique sur les canalisations.</p>
+      <img class="snapshot" src="images/tunnel_intro.jpg" alt="Couloir principal – réseau vapeur" loading="lazy">
+      <p>Bruitage : <a href="media/steam_hiss.wav">pssshhh</a></p>
+    </article>
+
+    <!-- ========================== BILLET 2 ========================== -->
+    <article>
+      <h2>Escalier Scellé de Barrett Hall</h2>
+      <time datetime="1998-10-12">12 octobre 1998</time>
+      <p>Escalier en spirale, scellé par un mur de béton. Graffiti visible : « <code>Sic Itur ad Inferos</code> ».</p>
+      <img class="snapshot" src="images/entry_barrett.jpg" alt="Escalier Barrett – mur béton" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 3 ========================== -->
+    <article>
+      <h2>La Salle du Manuscrit</h2>
+      <time datetime="1998-10-10">10 octobre 1998</time>
+      <p>Pièce cimentée et sèche, loin du circuit de vapeur. Table branlante, VHS poussiéreuses et carnet jauni.</p>
+      <img class="snapshot" src="images/manuscript_room.jpg" alt="Salle du Manuscrit – table et VHS" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 4 ========================== -->
+    <article>
+      <h2>Le Nœud Central</h2>
+      <time datetime="1998-10-02">2 octobre 1998</time>
+      <p>Puits vertical grillagé. Profondeur inconnue ; j'entends parfois un battement profond.</p>
+      <img class="snapshot" src="images/central_node.jpg" alt="Puits du Nœud Central" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 5 ========================== -->
+    <article>
+      <h2>Passage Inondé</h2>
+      <time datetime="1998-10-09">9 octobre 1998</time>
+      <p>Eau jusqu'aux chevilles. Reflets glauques, silhouette au loin. La photo parle d'elle-même.</p>
+      <img class="snapshot" src="images/flooded_passage.jpg" alt="Tunnel inondé avec silhouette" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 6 ========================== -->
+    <article>
+      <h2>Carrefour des Symboles</h2>
+      <time datetime="1998-09-25">25 septembre 1998</time>
+      <p>Quatre tunnels se rejoignent. Des symboles inconnus peints sur le mur.</p>
+      <img class="snapshot" src="images/junction_symbols.jpg" alt="Junction – symboles muraux" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 7 ========================== -->
+    <article>
+      <h2>Atelier Oublié</h2>
+      <time datetime="1998-09-18">18 septembre 1998</time>
+      <p>Vieille salle d'outils. Tout est rouillé, la peinture s'effrite, aucune sortie évidente.</p>
+      <img class="snapshot" src="images/workshop_room.jpg" alt="Atelier abandonné" loading="lazy">
+    </article>
+
+    <!-- ========================== BILLET 8 ========================== -->
+    <article>
+      <h2>Tunnel en Briques</h2>
+      <time datetime="1998-09-10">10 septembre 1998</time>
+      <p>Brick corridor, vert lueur au fond. Un observateur silencieux m'a vu — ou est-ce l'inverse ?</p>
+      <img class="snapshot" src="images/brick_figure_tunnel.jpg" alt="Tunnel en briques avec silhouette" loading="lazy">
+    </article>
+
+    <hr class="rainbow">
+
+    <!-- ARCHIVES -->
+    <section id="archives">
+      <h2>Archives</h2>
+      <p>Index complet <em>under construction</em>… revenez plus tard !</p>
+    </section>
+
+    <!-- PLAN ASCII -->
+    <section id="map">
+      <h2>Plan ASCII</h2>
+      <pre>
+[Rotonde]
+    ║
+    ║
+[Chaufferie]──╣──[Nœud Central]
+    ║               ║
+[Barrett]       [Crique Secrète]
+         \_________[Atelier]
+      </pre>
+    </section>
+
+    <!-- SECRETS -->
+    <section id="secrets">
+      <h2>Secrets & Documents</h2>
+      <p><a href="scans/page12.png">📜 Scan #12</a> ▸ Carnet trouvé.</p>
+      <p><a href="media/audio01.wav">🔊 Battement Nœud Central</a></p>
+    </section>
+
+    <!-- GUESTBOOK -->
+    <section id="guestbook">
+      <h2>Livre d'Or</h2>
+      <form action="#" method="post">
+        <label>Pseudo :<br><input type="text
